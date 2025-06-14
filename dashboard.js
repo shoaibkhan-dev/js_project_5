@@ -92,8 +92,22 @@ function editTask(index) {
 renderTasks();
 
 
-try {
-    
-} catch (error) {
-    
-}
+ function orderPizza (pizzaAvailabel){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+        if(pizzaAvailabel){
+            resolve("pizza delivered 🍕")
+        } else {
+            reject("Sorry, pizza out of stock ❌")
+        }
+        }, 3000)
+    })
+ }
+
+ orderPizza(true)
+ .then(function(result){
+    console.log("success:", result)
+ })
+ .catch(function(error){
+    console.log(error)
+ })
