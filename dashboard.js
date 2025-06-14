@@ -79,14 +79,6 @@ function deleteTask(index) {
   saveTasks();
   renderTasks();
 }
-
-function editTask(index) {
-  const newTitle = prompt("Edit your task:", tasks[index].title);
-  if (newTitle !== null && newTitle.trim() !== "") {
-    tasks[index].title = newTitle.trim();
-    saveTasks();
-    renderTasks();
-  }
+function name(params) {
+    
 }
-
-renderTasks();
