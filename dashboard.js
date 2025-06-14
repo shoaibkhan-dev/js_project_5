@@ -90,3 +90,10 @@ function editTask(index) {
 }
 
 renderTasks();
+
+
+try {
+    
+} catch (error) {
+    
+}
