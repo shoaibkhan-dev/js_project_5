@@ -111,3 +111,33 @@ renderTasks();
  .catch(function(error){
     console.log(error)
  })
+
+
+ async function getPizza() {
+    try {
+      let result = await orderPizza(true); // try false also
+      console.log("Success:", result);
+    } catch (error) {
+      console.log("Error:", error);
+    }
+  }
+  
+  getPizza();
+
+  async function getPizza() {
+    try {
+        let result = await orderPizza(true);
+        console.log(result)
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+  async function getPizza() {
+    try {
+        let result = await orderPizza(true)
+        console.log(result)
+    } catch (error) {
+        console.log(error)
+    }
+  }
